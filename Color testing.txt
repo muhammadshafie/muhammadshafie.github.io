@@ -1,0 +1,8 @@
+Red Color 
+light red#ff4e45
+red #f00
+medium red #c00
+red 30 #ff8983
+red 70 #990412
+
+medium red alpha 90 rgba(204, 0, 0, 0.9)
