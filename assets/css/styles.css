@@ -288,7 +288,7 @@ body.dark-theme{
 }
 
 .scroll-header .change-theme{
-  color: var(--title-color);
+  color: var(--body-color)
 }
 
 /* Active link */
