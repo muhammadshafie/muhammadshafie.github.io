@@ -409,22 +409,22 @@ img {
 }
 
 .skills__html,
-.skills__xd,
 .skills__cht,
 .skills__hts{
   width: 80%;
 }
 
 .skills__css,
-.skills__php,
-.skills__figma{
+.skills__xd,
+.skills__php{
   width: 70%;
 }
 
 .skills__js,
 .skills__python,
 .skills__photoshop,
-.skills__ad{
+.skills__ad,
+.skills__figma{
   width: 60%;
 }
 
