@@ -9,7 +9,7 @@
     <link href='https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css' rel='stylesheet'>
 
     <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="">
+    <link rel="stylesheet" href="assets/css/swiper-bundle.min.css">
 
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="/assets/css/styles.css">
@@ -560,7 +560,8 @@
                     </a>
                 </div>
 
-                <div class="portfolio__card mix web">
+                <!-- reserved for new project -->
+                <!-- <div class="portfolio__card mix web">
                     <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
 
                     <h3 class="portfolio__title">Web Design</h3>
@@ -568,15 +569,16 @@
                     <a href="" class="portfolio__button">
                         Demo<i class='bx bx-right-arrow-alt portfolio__icon'></i>
                     </a>
-                </div>
+                </div> -->
 
+                <!-- reserved for react native mobile project soon -->
                 <div class="portfolio__card mix mobile">
                     <img src="assets/img/portfolio3.jpg" alt="" class="portfolio__img">
 
-                    <h3 class="portfolio__title">App Mobile</h3>
+                    <h3 class="portfolio__title">Todo List App Using <br> React Native (On Progress)</h3>
 
                     <a href="" class="portfolio__button">
-                        Demo<i class='bx bx-right-arrow-alt portfolio__icon'></i>
+                        No Demo Yet<i class='bx bx-right-arrow-alt portfolio__icon'></i>
                     </a>
                 </div>
 
@@ -593,9 +595,95 @@
             </div>
         </section>
 
-        <!--==================== TESTIMONIAL ====================-->
-        <section class="testimonial section">
+        <!--==================== AWARD ====================-->
+        <section class="award section" id="award">
+            <h2 class="section__title">Achievement</h2>
+            <span class="section__subtitle">My best award</span>
 
+            <div class="award__container container swiper">
+                <div class="swiper-wrapper">
+                    <div class="award__card swiper-slide">
+                        <img src="assets/img/award/award1.png" alt="" class="award__img">
+
+                        <div class="award__data">
+                            <div class="award__calendar">
+                                <i class='bx bx-calendar'></i>
+                                NOVEMBER 2021
+                            </div>
+                            <h3 class="award__title">
+                                President's List Award Session 2020/2021 (Bachelor)
+                            </h3>
+                            <p class="award__subtitle">
+                                Awarded the President List Award after attaining a GPA of 3.75 and above for three
+                                consecutive semesters during Bachelor Level.
+                            </p>
+
+                        </div>
+                    </div>
+
+                    <div class="award__card swiper-slide">
+                        <img src="assets/img/award/award2.png" alt="" class="award__img">
+
+                        <div class="award__data">
+                            <div class="award__calendar">
+                                <i class='bx bx-calendar'></i>
+                                JUNE 2021
+                            </div>
+                            <h3 class="award__title">
+                                Idea Regeneration Expo 2021 Bronze Award
+                            </h3>
+                            <p class="award__subtitle">
+                                Awarded Bronze Award during the Idea Regeneration Expo (iREX) for Electricity Energy
+                                Monitoring System for Home Appliances using Raspberry Pi and
+                                Node-RED project
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="award__card swiper-slide">
+                        <img src="assets/img/award/award3.png" alt="" class="award__img">
+
+                        <div class="award__data">
+                            <div class="award__calendar">
+                                <i class='bx bx-calendar'></i>
+                                FEBRUARY 2019
+                            </div>
+                            <h3 class="award__title">
+                                24th MSU Convocation 2019 Academic Award
+                            </h3>
+                            <p class="award__subtitle">
+                                Been selected as one of 59 students among 1,811 new graduates to receive a special
+                                award during the 24th MSU Convocation for Diploma Level
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="award__card swiper-slide">
+                        <img src="assets/img/award/award4.png" alt="" class="award__img">
+
+                        <div class="award__data">
+                            <div class="award__calendar">
+                                <i class='bx bx-calendar'></i>
+                                MARCH 2018
+                            </div>
+                            <h3 class="award__title">
+                                President's List Award Session 2016/2017 (Diploma)
+                            </h3>
+                            <p class="award__subtitle">
+                                Awarded the President List Award after attaining a GPA of 3.75 and above for three
+                                consecutive semesters during Diploma Level.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="swiper-button-next">
+                    <i class='bx bx-chevron-right'></i>
+                </div>
+                <div class="swiper-button-prev">
+                    <i class='bx bx-chevron-left'></i>
+                </div>
+            </div>
         </section>
     </main>
 
@@ -612,7 +700,7 @@
                     <a href="#portfolio" class="footer__link">Portfolio</a>
                 </li>
                 <li>
-                    <a href="#testimonial" class="footer__link">Testimonial</a>
+                    <a href="#award" class="footer__link">Award</a>
                 </li>
             </ul>
 
@@ -623,12 +711,15 @@
     </footer>
 
     <!--==================== SCROLL TOP ====================-->
-    <a href="" class="scrollup" id="scroll-up">
+    <a href="#" class="scrollup" id="scroll-up">
         <i class='bx bx-up-arrow-alt scrollup__icon'></i>
     </a>
 
+    <!--=============== SCROLLREVEAL ===============-->
+    <script src="assets/js/scrollreveal.min.js"></script>
+
     <!--==================== SWIPER JS ====================-->
-    <script src=""></script>
+    <script src="assets/js/swiper-bundle.min.js"></script>
 
     <!--==================== MIXITUP FILTER ====================-->
     <script src="assets/js/mixitup.min.js"></script>

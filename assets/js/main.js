@@ -1,17 +1,3 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
-
-
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
-
-
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
-
-
-/*==================== REMOVE MENU MOBILE ====================*/
-
-
 /*==================== ACCORDION SKILLS ====================*/
 const skillsContent = document.getElementsByClassName('skills__content'),
         skillsHeader = document.querySelectorAll('.skills__header')
@@ -53,9 +39,6 @@ tabs.forEach(tab =>{
     })
 })
 
-/*==================== SERVICES MODAL ====================*/
-
-
 /*==================== MIXTITUP FILTER ====================*/
 let mixerPortfolio = mixitup('.portfolio__container', {
     selectors: {
@@ -75,8 +58,35 @@ function activePortfolio(){
 }
 
 linkPortfolio.forEach(l => l.addEventListener('click', activePortfolio))
-/*==================== TESTIMONIAL ====================*/
-
+/*==================== AWARD ====================*/
+var swiperAward = new Swiper(".award__container", {
+    spaceBetween: 32,
+    grabCursor: true,
+    slidesPerView: 'auto',
+    centeredSlides:true,
+    loop: true,
+    autoplay: {
+        delay: 2500
+    },
+    navigation: {
+        nextEl: ".swiper-button-next",
+        prevEl: ".swiper-button-prev",
+    },
+    breakpoints: {
+        576: {
+            slidesPerView: 2,
+            spaceBetween: 40,
+        },
+        768: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+        },
+        1024: {
+            slidesPerView: 2,
+            spaceBetween: 48,
+        },
+    },
+});
 
 /*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
 const sections = document.querySelectorAll('section[id]')
@@ -99,7 +109,12 @@ function scrollActive(){
 window.addEventListener('scroll', scrollActive)
 
 /*==================== CHANGE BACKGROUND HEADER ====================*/ 
-
+function scrollHeader(){
+    const header = document.getElementById('header')
+    // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
+    if(this.scrollY >= 50) header.classList.add('scroll-header'); else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
 
 /*==================== SHOW SCROLL UP ====================*/ 
 function scrollUp(){
@@ -109,4 +124,22 @@ function scrollUp(){
 }
 window.addEventListener('scroll', scrollUp)
 
-/*==================== DARK LIGHT THEME ====================*/ 
+/*=============== SCROLL REVEAL ANIMATION ===============*/
+const sr = ScrollReveal({
+    origin: 'top',
+    distance: '60px',
+    duration: 2500,
+    delay: 400
+})
+
+sr.reveal(`.home__title, .footer__container`)
+sr.reveal(`.section__title`, {delay: 500, reset: true})
+sr.reveal(`.section__subtitle`, {delay: 600, reset: true})
+sr.reveal(`.home__subtitle,.footer__info`, {delay: 500})
+sr.reveal(`.home__description`, {delay: 600})
+sr.reveal(`.home__social`, {delay: 700})
+sr.reveal(`.home__img, .home__button`, {delay: 800, origin: 'bottom'})
+sr.reveal(`.logos__img`, {interval: 100})
+sr.reveal(`.home__button-small, .skills__container, .portfolio__container, .portfolio__filters`, {origin: 'left'})
+sr.reveal(`.home__scroll, .contact__images, .filters, .award__container`, {origin: 'right'})
+
