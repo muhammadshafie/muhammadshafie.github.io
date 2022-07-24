@@ -694,11 +694,13 @@ img {
 }
 
 .footer__title,
-.footer__link{
+.footer__link,
+.footer__counter{
   color: var(--body-color);
 }
 
-.footer__title{
+.footer__title,
+.footer__counter{
   text-align: center;
   margin-bottom: var(--mb-2);
 }
