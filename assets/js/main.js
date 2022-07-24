@@ -143,3 +143,7 @@ sr.reveal(`.logos__img`, {interval: 100})
 sr.reveal(`.home__button-small, .skills__container, .portfolio__container, .portfolio__filters`, {origin: 'left'})
 sr.reveal(`.home__scroll, .contact__images, .filters, .award__container`, {origin: 'right'})
 
+/*=============== WEBSITE COUNTER FUNCTION ===============*/
+function websiteVisits(response) {
+    document.querySelector("#visits").textContent = response.value;
+}
